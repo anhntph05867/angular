@@ -1,0 +1,22 @@
+
+<div class="conttroler">
+  <div class="card-body">
+    <a href="#" class="card-link"> Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+    <div class="card" >
+     <img src="{{user.LinkImage}}" class="card-img-top" alt="..." >
+     <div class="card-body">
+       <h5 class="card-title">Card title</h5>
+       <ul class="list-unstyled">
+           <li>tên : {{ Product.name}}</li>
+           <li>tuổi : {{ Product.age}}</li>
+           <li>tình trạng hôn nhân : {{Product.isMarried ? 'đã có gia đình' : 'chưa có gia đình'}}</li>
+       </ul>
+       <a href="{{user.LinkProfile}}" class="btn btn-primary">chi tiet</a>
+       <button class="btn btn-primary" (click)="onClickMe($event)">click me</button>
+       <p class="card-text"></p>
+       <a href="#" class="btn btn-primary">Go somewhere</a>
+     </div>
+   </div>    
+</div>
